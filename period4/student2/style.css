@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "archivo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.211);
+    position: fixed;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+
+        li {
+            margin-left: 2rem;
+            margin-right: 15px;
+
+            a {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: rgb(109, 95, 95);
+            }
+
+        }
+
+        li:hover {
+            animation: pulse;
+            animation-duration: 1s;
+        }
+
+    }
+}
+
+#home,
+#about,
+#projects,
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#home {
+    background-image: url(./background1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    h1 {
+        position: absolute;
+        left: 50px;
+        top: 20%;
+        font-size: 2rem;
+    }
+
+    p {
+        position: absolute;
+        left: 50px;
+        top: 24%;
+        font-size: 1.5rem;
+    }
+
+    a {
+        position: absolute;
+        left: 50px;
+        top: 28%;
+        color: white;
+        text-decoration: none;
+        background-color: rgb(68, 64, 64);
+        padding: 10px;
+        transition: 1s;
+        border: solid 1px white;
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        color: rgb(68, 64, 64);
+        background-color: white;
+        padding: 10px;
+        transition: 1s;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    img {
+        position: absolute;
+        top: 680px;
+        right: 80px;
+        width: 10%;
+    }
+
+}
+
+#about {
+    color: white;
+    background-color: #050b0b;
+}
