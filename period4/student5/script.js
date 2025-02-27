@@ -19,26 +19,29 @@ document.addEventListener('click', (event) => {
     }
 })
 
-let previous = document.getElementById('previous');
-let next = document.getElementById('next');
-let images = document.querySelectorAll('.carousel-images img')
-let index = 0;
-let carousel = document.querySelector('.carousel-images');
+window.addEventListener('scroll', function () {
+    let nav = this.document.querySelector('nav');
+    let text = document.querySelector('.title h1');
+    let links = document.querySelectorAll('.nav-links li a');
 
-previous.addEventListener('click', () => {
-    if (index === 0) {
-        index = images.length - 1;
-    } else {
-        index = index - 1;
-    }
-    carousel.style.transform = `translateX(-${index * 800}px)`
+    console.log(text);
+    console.log(links);
 
-})
-next.addEventListener('click', () => {
-    if (index === images.length - 1) {
-        index = 0;
-    } else {
-        index = index + 1;
+    if (this.window.scrollY > 50) {
+        console.log('scrolled 50px');
+        nav.style.backgroundColor = '#ffffff00';
+        text.style.color = '#ffffff'
+        links[0].style.color = '#ffffff'
+        links[1].style.color = '#ffffff'
+        links[2].style.color = '#ffffff'
+        links[3].style.color = '#ffffff'
     }
-    carousel.style.transform = `translateX(-${index * 800}px)`
+    else {
+        nav.style.backgroundColor = '#ffffff'
+        text.style.color = '#008080'
+        links[0].style.color = '#008080'
+        links[1].style.color = '#008080'
+        links[2].style.color = '#008080'
+        links[3].style.color = '#008080'
+    }
 });
