@@ -138,3 +138,44 @@ main {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
 }
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.button-30 {
+    opacity: 0;
+    /* Start with the buttons hidden */
+}
+
+.button-30.slide-in-left {
+    animation: slideInLeft .4s ease-out forwards;
+    opacity: 1;
+    /* Ensure buttons are visible after animation */
+}
+
+.button-30.slide-in-right {
+    animation: slideInRight .4s ease-out forwards;
+    opacity: 1;
+    /* Ensure buttons are visible after animation */
+}
