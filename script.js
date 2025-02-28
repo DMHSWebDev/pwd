@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll('.button-30:not(.home-button)');
+
     buttons.forEach((button, index) => {
         setTimeout(() => {
             if (index % 2 === 0) {
