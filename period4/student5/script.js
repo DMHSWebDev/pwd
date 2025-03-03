@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
 
     if (this.window.scrollY > 50) {
         console.log('scrolled 50px');
-        nav.style.backgroundColor = '#ffffff00';
+        nav.style.backgroundColor = '#0f2d4c63';
         text.style.color = '#ffffff'
         links[0].style.color = '#ffffff'
         links[1].style.color = '#ffffff'
@@ -37,7 +37,7 @@ window.addEventListener('scroll', function () {
         links[3].style.color = '#ffffff'
     }
     else {
-        nav.style.backgroundColor = '#ffffff'
+        nav.style.backgroundColor = '#0f2e4c'
         text.style.color = '#008080'
         links[0].style.color = '#008080'
         links[1].style.color = '#008080'
