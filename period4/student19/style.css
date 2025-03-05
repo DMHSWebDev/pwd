@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", serif;
+    background-color: grey;
+}
+
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: fit-content;
+    flex-direction: column;
+}
+
+.carousel-container {
+    width: 600px;
+
+}
+
+
+.card-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 2.2rem;
+        color: rgb(196, 184, 184);
+        background-color: rgb(70, 10, 10);
+        border: solid darkred 8px;
+        box-shadow: darkred 1px 1px 10px;
+    }
+}
+
+.card-container {
+    perspective: 1000px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    min-height: fit-content;
+    gap: 2rem;
+    margin-top: 4rem;
+
+}
+
+.card {
+    width: 220px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-sizing: 2px 2px 2px white;
+    border-radius: 10px;
+    background-color: rgb(54, 52, 52);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: black;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: solid darkred 10px;
+        box-shadow: darkred 1px 1px 10px;
+    }
+}
+
+.card-back {
+    background-color: rgba(242, 198, 232, 0.349);
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    background-color: rgba(159, 236, 232, 0);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
