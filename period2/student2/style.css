@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    height: 200px;
+    background-color: rgb(0, 106, 255);
+    background-image: linear-gradient(rgb(6, 197, 255), rgb(0, 94, 255));
+    flex-wrap: wrap;
+    border-bottom: 4px solid rgb(0, 51, 255);
+
+
+
+
+    .nav-logo {
+        display: flex;
+        border: 4.5px solid darkblue;
+        border-radius: 25px;
+        padding: 10px;
+        margin-left: 20px;
+
+        img {
+            display: flex;
+            width: 150px;
+            height: 150px;
+        }
+
+    }
+
+
+    .nav-links {
+        display: flex;
+
+        ul {
+
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 15px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.55rem;
+                    color: skyblue;
+                    border-bottom: 3px solid skyblue;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-family: 200;
+                }
+
+            }
+
+
+            a:hover {
+                color: darkblue;
+                border-bottom: 5px solid rgb(0, 183, 255);
+                transition: all ease-in-out 1.05s;
+            }
+        }
+    }
+
+    #Menu-toggle {
+        display: none;
+    }
+}
+
+
+.landing-page::after {}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+
+
+
+
+    h2 {
+        max-height: fit-content;
+        max-width: fit-content;
+
+        position: absolute;
+        top: 23rem;
+        left: 45rem;
+
+        font-size: 4rem;
+
+        border-bottom: 10px solid skyblue;
+
+        border-radius: 25px;
+
+        color: rgb(2, 61, 156);
+    }
+
+
+
+    .landing-container {
+        p {}
+    }
+}
