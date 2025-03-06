@@ -1,10 +1,6 @@
-// window.addEventListener('scroll', function () {
-//     let nav = this.document.querySelector('nav')
-//     if (this.window.scrollY > 100) {
-//         console.log('scrolled 50px');
-//         nav.style.backgroundColor = 'transparent'
+let menu_toggle = document.getElementById('menuToggle');
+let nav_links = document.querySelector('.nav-links');
 
-//     } else {
-//         nav.style.backgroundColor = 'black'
-//     }
-// })
+menu_toggle.addEventListener('click', () => {
+    nav_links.classList.toggle('active');
+});
