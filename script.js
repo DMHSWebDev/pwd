@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const seconds = String(now.getSeconds()).padStart(2, '0');
         hours = hours < 10 ? hours : String(hours).padStart(2, '0');
-        clock.textContent = `${hours}:${minutes}:${seconds}`;
+        clock.textContent = `${hours}:${minutes}`;
+        //clock.textContent = `${hours}:${minutes}:${seconds}`;
     }
     setInterval(updateClock, 1000);
     updateClock(); // Initial call to display the clock immediately

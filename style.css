@@ -80,7 +80,6 @@ main {
     line-height: 1rem;
     font-size: 1rem;
     text-transform: uppercase;
-
 }
 
 .landing::after {
@@ -96,7 +95,6 @@ main {
     z-index: -1;
 }
 
-
 .contact {
     display: flex;
     justify-content: center;
@@ -104,11 +102,8 @@ main {
     height: 100vh;
     min-height: fit-content;
     flex-direction: column;
-
-
 }
 
-/* CSS */
 .button-30 {
     display: flex;
     justify-content: center;
@@ -168,13 +163,13 @@ main {
 
 .button-30 {
     opacity: 0;
-    /* Start with the buttons hidden */
+
 }
 
 .button-30.slide-in-left {
     animation: slideInLeft .4s ease-out forwards;
     opacity: 1;
-    /* Ensure buttons are visible after animation */
+
 }
 
 .button-30.slide-in-right {
@@ -198,7 +193,6 @@ nav {
     top: 0;
     left: 0;
     z-index: 100;
-
     padding: 0 0.5rem;
 
     .mobile-toggle {
@@ -246,7 +240,7 @@ nav {
     font-weight: bold;
     color: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100%;
     width: 150px;
@@ -351,7 +345,7 @@ nav {
         align-items: center;
         gap: 10px;
         width: 80px;
-        ;
+
 
         img {
             width: 20px;
@@ -407,10 +401,10 @@ nav {
         font-weight: bold;
         color: #ffffff;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         height: 100%;
-        width: 120px;
+        width: 80px;
         font-family: 'Courier New', Courier, monospace;
 
     }
