@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Updates.</title>
+    <link rel="stylesheet" href="./second.css">
+    <link rel="icon" type="icon/x-image" href="./img/F (1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<section class="form" id="form">
+
+    <a href="index.html"> <i class="fa-solid fa-arrow-left"></i> Back to main page</a>
+    <div class="form-wrapper">
+        <h1>Get More Information When You Sign Up!</h1>
+        <form id="registration-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            <span class="error" id="name-error"></span>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="password-error"></span>
+            <span id="password-strength"></span>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span class="error" id="confirm-password-error"></span>
+
+            <label for="newsletter">Recieve newsletter from us</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <button type="submit">Sign Up!</button>
+
+        </form>
+    </div>
+
+
+</section>
+
+
+<script src="./second.js"></script>
+
+<body>
+
+</body>
+
+</html>

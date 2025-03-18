@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(240, 255, 253);
+    color: rgb(68, 92, 96);
+    text-align: center;
+    margin-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+body.dark-mode {
+    background-color: rgb(64, 100, 95);
+    color: rgb(1, 27, 40);
+}
+
+button:hover {
+    cursor: pointer;
+}

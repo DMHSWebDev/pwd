@@ -40,6 +40,10 @@ setTimeout(() => {
 
 }, 1000);
 
+
+
+
+
 no_sound.addEventListener('click', function () {
     console.log('clicked no_sound');
 

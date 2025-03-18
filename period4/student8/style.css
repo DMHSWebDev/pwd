@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Contact {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(68, 64, 64);
+    padding: 10px;
+    transition: 1s;
+    border: solid 1px white;
+    font-size: 1.5rem;
+    height: 5vh;
+
+}
+
+body {
+    font-family: "Oswald", serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    height: 5vh;
+    padding: 0 1.2rem;
+    position: sticky;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+
+
+    h1 {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        color: blue;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        font-size: bold;
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: .1s;
+        }
+
+    }
+
+}
+
+.home {
+
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.414);
+    color: white;
+    background-image: url(./Untitled\ design\ \(48\).png);
+    background-size: cover;
+
+    h1 {
+
+        position: absolute;
+        left: 50px;
+        top: 20%;
+        font-size: 2rem;
+    }
+
+    p {
+        position: absolute;
+        left: 50px;
+        top: 24%;
+        font-size: 1.5rem;
+    }
+
+    a {
+        position: absolute;
+        left: 50px;
+        top: 28%;
+        color: white;
+        text-decoration: none;
+        background-color: rgb(68, 64, 64);
+        padding: 10px;
+        transition: 1s;
+        border: solid 1px white;
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        color: rgb(68, 64, 64);
+        background-color: white;
+        padding: 10px;
+        transition: 1s;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+
+}
+
+.about {
+    background-color: rgb(41, 37, 37);
+    color: white;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+
+
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        font-family: cursive;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(0, 136, 255);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: larger;
+        transition: 1s;
+        text-transform: uppercase;
+
+
+    }
+
+    a:hover {
+        background-color: pink;
+    }
+
+    p {
+        font-size: large;
+        font-family: cursive;
+    }
+
+    h3 {
+        font-weight: 1000;
+
+
+    }
+
+}
+
+
+.skills {
+    background-color: rgb(47, 39, 39);
+    color: white;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    li {
+        color: white;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 25vh;
+
+
+    .brands {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+
+.card-container {
+    perspective: 1000px;
+
+    display: grid;
+    /* flex: wrap; */
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    min-height: fit-content;
+    gap: 5px;
+
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: transform 0.5s;
+    box-shadow: 0 0 50px blue;
+    color: white;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+
+    h1,
+    h2,
+    h3 {
+        margin-top: 3px;
+    }
+}
+
+.card-front {
+    background-color: blue;
+
+    h1,
+    h2,
+    h3 {
+        margin-top: 3px;
+    }
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transition: smooth 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 50px blue;
+    color: white;
+}
+
+.skills {
+
+
+    li {
+        font-weight: bolder;
+        font-family: cursive;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: x-small;
+        transition: 1s;
+        text-transform: uppercase;
+    }
+
+
+}
+
+.contact {
+    a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer {
+    p {
+        background-color: black;
+        color: white;
+        height: 5vh;
+    }
+}
+
+.carousle-control-prev,
+.carousle-control-next {
+    background-color: white;
+    color: white;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.carousel-container {
+    margin: 1rem;
+    width: 1000px;
+}

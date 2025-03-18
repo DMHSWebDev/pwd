@@ -377,6 +377,8 @@ footer {
     }
 
     #home {
+        min-height: fit-content;
+
         h1 {
             font-size: 1.5rem;
         }
@@ -391,6 +393,7 @@ footer {
 
 
     #about {
+        min-height: fit-content;
 
         img {
             width: 400px;
@@ -420,6 +423,7 @@ footer {
     #projects {
         background-image: none;
         background-color: black;
+        min-height: fit-content;
 
         h2 {
             display: flex;
@@ -461,6 +465,7 @@ footer {
         background-image: none;
         background-color: black;
         height: 80vh;
+        min-height: fit-content;
 
         h2 {
             font-size: 6rem;
@@ -522,5 +527,6 @@ footer {
     footer {
         height: 20vh;
         font-size: 1rem;
+        min-height: fit-content;
     }
 }
