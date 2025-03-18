@@ -295,6 +295,7 @@ nav {
 
             height: 30vh;
             width: 200px;
+            min-height: fit-content;
 
             display: flex;
             top: 100px;
