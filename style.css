@@ -29,6 +29,7 @@ main {
     flex-direction: column;
     text-align: center;
     height: 100vh;
+    position: relative;
 
 
 }
@@ -51,9 +52,6 @@ main {
 
     flex-direction: column;
     text-align: center;
-
-    position: relative;
-
 
     h1 {
         font-size: 3rem;
@@ -85,7 +83,7 @@ main {
     text-transform: uppercase;
 }
 
-.landing::after {
+main::after {
     content: '';
     position: absolute;
     top: 0;
@@ -388,7 +386,7 @@ nav {
 
     }
 
-    .landing::after {
+    main::after {
         content: '';
         position: absolute;
         top: 0;
