@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #bae0ff;
+    overflow: hidden;
+}
+
+#clouds {
+    background-image: url(./clouds\ &\ suns.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 200%;
+    height: 192px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#ground {
+    background-image: url(./ground.png);
+    background-repeat: repeat-x;
+    background-position-y: 0;
+    background-position-x: 0;
+    background-color: transparent;
+    width: 200%;
+    height: 192%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}

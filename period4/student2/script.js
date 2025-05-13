@@ -1,8 +1,29 @@
-let menu_toggle = document.getElementById('menu-toggle');
-console.log(menu_toggle)
-let nav_links = document.querySelector('.nav-links')
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(Flip)
 
-menu_toggle.addEventListener('click', () => {
-    console.log('clicked')
-    nav_links.classList.toggle('open')
-})
+    const grid = document.querySelector(".grid")
+    const squareNodeList = document.querySelectorAll(".square")
+    console.log(squareNodeList)
+
+    const squares = Array.from(squareNodeList)
+    console.log(squares)
+
+    const shuffleButton = document.getElementById("shufflebutton")
+
+    shuffleButton.addEventListener("click", () => {
+        const state = Flip.getState(squares)
+        const shuffleSquares = squares.sort(() => Math.random() - 0.5)
+        console.log(shuffleSquares)
+
+        shuffleSquares.forEach((square) => {
+            grid.append(square)
+
+        })
+
+        Flip.from(state, {
+            duration: .2,
+            ease: "power1.inOut"
+        })
+    })
+
+});

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+
+}
+
+#shuffle {
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+
+#shuffle:hover {
+    color: rgb(220, 255, 94);
+    background-color: rgb(255, 17, 17);
+    transition: 0.5s all ease-in-out;
+    font-size: 1rem;
+    padding: 10px;
+
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(238, 43, 215);
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(20, 19, 19);
+
+
+
+
+    padding: 25px;
+}
