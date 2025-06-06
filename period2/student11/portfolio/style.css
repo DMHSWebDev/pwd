@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Dodum&family=Kurale&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #084b7e;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Kurale', serif;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            a:hover {
+                color: #000000;
+            }
+        }
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.hometext {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    margin-top: 2rem;
+
+    h1 {
+        color: #999999;
+        font-size: 10rem;
+        font-weight: 200;
+    }
+
+    h2 {
+        color: #000000;
+        font-size: 10rem;
+        font-weight: 200;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+.abouttext {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+
+
+    h2 {
+        color: #084b7e;
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+    h3 {
+        color: #000000;
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    p {
+        font-family: 'Gowun Dodum', serif;
+        color: #000000;
+        font-size: 2rem;
+        font-weight: 200;
+        width: 800px;
+
+    }
+
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+.skillstext {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    color: #084b7e;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.skillsbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .skill1 {
+        width: 300px;
+        height: 300px;
+        border: 5px solid #084b7e;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kurale', serif;
+            gap: 50px;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        p {
+            font-family: 'Gowun Dodum', serif;
+            color: #000000;
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+    }
+
+    .skill2 {
+        width: 300px;
+        height: 300px;
+        border: 5px solid #084b7e;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kurale', serif;
+            gap: 50px;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        p {
+            font-family: 'Gowun Dodum', serif;
+            color: #000000;
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+    }
+
+    .skill3 {
+        width: 300px;
+        height: 300px;
+        border: 5px solid #084b7e;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kurale', serif;
+            gap: 50px;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        p {
+            font-family: 'Gowun Dodum', serif;
+            color: #000000;
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+    }
+}
+
+.project1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.project1text {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+
+
+    h2 {
+        color: #084b7e;
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+}
+
+.project2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.project2text {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+
+
+    h2 {
+        color: #6c5818;
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+}
+
+.project3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.project3text {
+    font-family: 'Kurale', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+
+
+    h2 {
+        color: #e487af;
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+
+    h2 {
+        color: #084b7e;
+        font-size: 4rem;
+        font-weight: 200;
+
+    }
+
+    h3 {
+        color: #000000;
+        font-size: 1.8rem;
+        font-weight: 200;
+        padding: 20px;
+    }
+
+}
+
+.appointment-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    min-height: fit-content;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 1px 1px 3px black;
+    flex-direction: column;
+
+    input,
+    select {
+        width: 100%;
+        height: 2rem;
+        font-size: 1.0rem;
+
+    }
+
+    textarea {
+        width: 100%;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        background-color: #084b7e;
+        color: white;
+        border-radius: 5px;
+        border: none;
+
+        i {
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+        font-family: 'Kurale', serif;
+        position: fixed;
+        width: 780px;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+
+                a:hover {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .abouttext {
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            width: 750px;
+        }
+    }
+
+    .skillsbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .skill1,
+        .skill2,
+        .skill3 {
+            width: 235px;
+            height: 250px;
+
+            h3 {
+                gap: 25px;
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: 'Gowun Dodum', serif;
+                color: #000000;
+                font-size: 1.2rem;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .appointment-form {
+        width: 400px;
+        padding: 1rem;
+        box-shadow: 1px 1px 3px black;
+        flex-direction: column;
+
+        input,
+        select {
+            width: 100%;
+            height: 2rem;
+            font-size: 1rem;
+
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 10px 20px;
+        font-family: 'Kurale', serif;
+        position: fixed;
+        width: 390px;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1rem;
+                }
+
+                a:hover {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .hometext {
+        h1 {
+            font-size: 6.5rem;
+        }
+
+        h2 {
+            font-size: 5.5rem;
+        }
+    }
+
+    .abouttext {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 350px;
+        }
+    }
+
+    .skillsbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .skill1,
+        .skill2,
+        .skill3 {
+            width: 200px;
+            height: 200px;
+
+            h3 {
+                gap: 15px;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-family: 'Gowun Dodum', serif;
+                color: #000000;
+                font-size: .9rem;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .appointment-form {
+        width: 400px;
+        padding: 1rem;
+        box-shadow: 1px 1px 3px black;
+        flex-direction: column;
+
+        input,
+        select {
+            width: 100%;
+            height: 2rem;
+            font-size: 1rem;
+
+        }
+
+
+
+    }
+}

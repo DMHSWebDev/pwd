@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akira's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomWiggle.min.js"
+        integrity="sha512-97eCqVDWGUZQxIgfw/FL8LA6NKmSOb+3sgRWne8yxDVbov6lGA4B822RKk0a8oaQbAubIhm5t20uq5hnWzDt9w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"
+        integrity="sha512-EVIYaMR2tIn6veV5jmP0M0DFBSBt5rAhRPsW0zwC9LyPzAIHNeWiZ4B5orgYeWbNq55vIwk8fOKCtTHwiCBvaw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/x-icon" href="./Favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Akira</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home" id="home">
+        <div class="hometext">
+            <h1>Creative </h1>
+            <h2>Portfolio</h2>
+        </div>
+
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="abouttext">
+            <h2>Introduction</h2>
+            <h3>About Me</h3>
+            <p>I am a passionate program and web developer in 9th grade, eager to expand my skills and create innovative
+                digital
+                solutions. With a strong foundation in coding and web design, I can develop functional and engaging
+                websites and
+                applications. My ability to problem-solve and think critically helps me tackle complex challenges in
+                programming.
+                Additionally, I have earned an OSHA training certificate, reflecting my commitment to workplace safety
+                and professional
+                responsibility. As I continue to grow in my technical knowledge, I strive to make meaningful
+                contributions to the field
+                of technology.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skillstext">
+            <h2>Personal Skills</h2>
+        </div>
+        <div class="skillsbox">
+            <div class="skill1">
+                <h3>HTML</h3>
+                <p>I use HTML to structure web pages, defining elements like headings, paragraphs, images, and links to
+                    create a
+                    well-organized foundation.</p>
+            </div>
+            <div class="skill2">
+                <h3>CSS</h3>
+                <p>I apply CSS to style and enhance the visual appeal of web pages, customizing layouts, colors, fonts,
+                    and animations for
+                    a polished user experience.</p>
+            </div>
+            <div class="skill3">
+                <h3>JavaScript</h3>
+                <p>I utilize JavaScript to add interactivity, enabling dynamic features such as user input validation,
+                    responsive design,
+                    and interactive web applications.</p>
+            </div>
+    </section>
+
+    <section class="project1" id="project1">
+        <div class="project1text">
+            <h2>Project 1</h2>
+        </div>
+        <div class="project1img">
+            <img src="" alt="">
+            <a href="./bored.api/" target="_blank" class="project-link">Bored API</a>
+        </div>
+
+
+    </section>
+
+    <section class="project2" id="project2">
+        <div class="project2text">
+            <h2>Project 2</h2>
+        </div>
+        <div class="project2img">
+            <img src="" alt="">
+        </div>
+
+    </section>
+
+    <section class="project3" id="project3">
+        <div class="project3text">
+            <h2>Project 3</h2>
+        </div>
+        <div class="project3img">
+            <img src="" alt="">
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contacttext">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="form-container">
+            <h3>Book Appoitments Now!</h3>
+            <form id="appointment-form " class="appointment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" required>
+                <label for="tel">Phone</label>
+                <input type="tel" required>
+                <label for="date">Date</label>
+                <input type="date" required>
+                <label for="time">Time:</label>
+                <select name="time" id="time" required>
+                    <option value="">---Select a Time---</option>
+                    <option value="8AM">8:00 AM</option>
+                    <option value="830AM">8:30 AM</option>
+                    <option value="9AM">9:00 AM</option>
+                    <option value="930AM">9:30 AM</option>
+                    <option value="10AM">10:00 AM</option>
+                    <option value="1030AM">10:30 AM</option>
+                    <option value="11AM">11:00 AM</option>
+                    <option value="1130AM">11:30 AM</option>
+                    <option value="12PM">12:00 AM</option>
+                    <option value="1230PM">12:30 AM</option>
+                </select>
+                <label for="message">Message:(optional)</label>
+                <input type="message">
+                <button type="submit"><i class="fa-regular fa-sun"></i>Submit information
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

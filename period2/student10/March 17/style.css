@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf0d5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.testimonial-container {
+    background-color: #c1121f;
+    color: #003049;
+    border-radius: 15px;
+    position: relative;
+    padding: 2rem;
+    width: 500px;
+}
+
+.testimonial {
+    text-align: justify;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user .user-image {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.user .user-details {
+    margin-left: 10px;
+}
+
+.fa-quote {
+    position: absolute;
+    top: 50px;
+}
+
+.fa-quote-left {
+    left: 5px;
+}
+
+.fa-quote-right {
+    right: 5px;
+}
+
+.progress-bar {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    animation: grow 9s linear infinite;
+    transform-origin: left;
+    margin-bottom: 1rem;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
