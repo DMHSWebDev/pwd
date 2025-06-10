@@ -1,0 +1,40 @@
+#cherry {
+    visibility: hidden;
+}
+
+#leaf {
+    visibility: hidden;
+}
+
+#petal {
+    visibility: hidden;
+}
+
+.container,
+.container2,
+.container3 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+.morphing-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-color: aliceblue;
+    gap: 2rem;
+}

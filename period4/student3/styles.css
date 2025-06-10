@@ -1,168 +1,198 @@
-body {
-    background-color: rgb(0, 0, 0);
-    opacity: 0;
-    animation: fadeIn 0.35s forwards;
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
+html {
+    overflow: hidden;
+}
+
+
+/* sets the main portfolio windows to be hidden */
+
+.port-windows {
+    .win-top {
+        display: none;
+        opacity: 0;
     }
 }
 
 
+/* button styles */
+
+#win-btn {
+    background-color: black;
+    color: white;
+
+    border: rgb(206, 206, 206) 1px solid;
+
+    padding: 0.35rem 2.25rem;
+
+    border-radius: 3px;
+
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+}
+
+#win-btn:hover {
+    background-color: rgb(49, 38, 71);
+    border: rgb(108, 87, 240) 1px solid;
+}
+
+#win-btn:active {
+    background-color: rgb(29, 19, 46);
+    border: rgb(82, 65, 190) 1px solid;
+}
+
+
+/* default window styles/settings */
+
+.win-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+    border-radius: 8px;
+
+    background-color: rgba(37, 31, 46, 0.552);
+    backdrop-filter: blur(125px);
+
+    .window-options {
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 8px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        span {
+            color: white;
+
+            img {
+                transform: translateY(5px);
+                margin-right: 5px;
+            }
+
+
+        }
+
+        .window-icons {
+            button {
+                background-color: white;
+
+                border: none;
+
+                width: 25px;
+                height: 5px;
+
+                margin-right: 15px;
+                border-radius: 5px;
+                transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.15s;
+            }
+
+            button:hover {
+                background-color: rgb(255, 43, 43);
+            }
+        }
+    }
+
+    .window {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        background-color: white;
+
+        text-align: center;
+        padding: 1rem;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        width: 475px;
+
+        background-color: black;
+
+        height: 450px;
+
+        color: white;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        img {
+            margin-top: 15px;
+            border-radius: 50%;
+        }
+
+        h6 {
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+/* main style sheet */
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-105px);
-
 
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    padding: 1rem;
-    height: 100vh;
-    z-index: 100;
 
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
+    background-color: rgba(37, 31, 46, 0.552);
+    backdrop-filter: blur(125px);
 
-    .arrow {
-        transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.35s;
-        margin-left: 20px;
-        transform: rotate(180deg);
+    color: white;
 
-        i {
-            font-size: 2rem;
-        }
-    }
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    height: 52px;
+    width: 100%;
 
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
+    z-index: 200;
 
-            a {
-                padding: 1.25rem 0;
+    bottom: 0;
 
-                i {
-                    color: rgb(223, 223, 223);
-                    font-size: 1.5rem;
-                    margin-right: 30px;
-                }
-            }
-        }
-    }
-}
-
-nav:hover {
-    transform: translateX(0%);
-
-    background-color: rgb(14, 14, 14);
-    box-shadow: 0 0 25px rgb(21, 22, 22);
-
-    .arrow {
-
-        margin-left: 20px;
-        transform: rotate(360deg);
-
-        i {
-            font-size: 2rem;
-        }
-    }
+    transform: translateY(100px);
 }
 
 
-.land {
-    background-color: black;
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    flex-direction: column;
+
+    position: relative;
+
     height: 100vh;
+    width: 100%;
 
-    gap: 20rem;
+    background: url("./images/SCTXjxca.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 
-    .info {
-
-        #pfp {
-            margin-bottom: 15px;
-            border-radius: 47%;
-
-            width: 125px;
-            transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
-        }
-
-        .info-details {
-
-            h2,
-            h3 {
-                transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
-            }
-        }
-
-
+    #welcome {
+        transform: translateY(-35px);
+        opacity: 0;
     }
 
-    .projects {
-        .featured {
-            h2 {
-                padding: 5px;
-                margin-top: 25px;
-                margin-bottom: 25px;
-                transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
-            }
-        }
-
+    .port-windows {
+        #about {}
     }
-
-    .site-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-        .card {
-            transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
-            border-radius: 3px;
-            background-color: black;
-            border: solid 2px rgb(60, 60, 60);
-
-            img {
-                border-radius: 0;
-            }
-
-            h5 {
-                font-size: 1.75rem;
-
-            }
-
-            .btn,
-            .btn-primary {
-                background-color: black;
-                border-color: white;
-
-                padding: 0.5rem 1.25rem;
-                transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.6s;
-            }
-
-            .btn:hover,
-            .btn-primary:hover {
-                background-color: rgb(255, 255, 255);
-                border-color: white;
-                color: black;
-                padding: 0.6rem 1.4rem;
-            }
-        }
-
-
-    }
-
 }

@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 246, 255);
+    flex-direction: column;
+    height: 100vh;
+}
+
+.slideshow-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    font-family: bubblegum sans, sans-serif;
+    color: rgb(68, 117, 160);
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.slides img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.slides {
+    display: flex;
+    width: max-content;
+    transition: transform 0.5s;
+
+}
+
+.slideshow {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: 10px solid white;
+    border-radius: 15px;
+}
+
+.next,
+.prev {
+    position: absolute;
+    background-color: rgb(202, 224, 255);
+    color: white;
+    border: none;
+    top: 50%;
+    transform: translateY('-50%');
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.next:hover,
+.prev:hover {
+    position: absolute;
+    background-color: rgb(194, 214, 243);
+    color: rgb(244, 244, 244);
+    border: none;
+    top: 50%;
+    transform: translateY('-50%');
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 21px;
+    transition: 0.3s;
+
+}
+
+.next {
+    right: 0;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 248, 255, 0.427);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 25px;
+    border: white solid 7px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000000;
+}
+
+.close:hover {
+    font-size: 3rem;
+    color: rgb(70, 69, 69);
+    transition: 0.3s;
+    background-color: rgb(204, 212, 219);
+    border-radius: 100px;
+}

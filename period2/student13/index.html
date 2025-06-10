@@ -4,21 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Essentrix's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link rel="stylesheet" href="./style.css">
-
-    <meta property="og:title" content="Things i like">
-    <meta property="og:description"
-        content="Things that i like and find interesting or just random things i enjoy or want to talk about">
-    <meta property="og:image" content="https://dmhspwd.org/period2/student13/og_image.jpg">
-
-    <meta property="og:url" content="https://dmhspwd.org/period2/student13/">
-    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <nav>
+        <ul id="mobile-nav-links">
+            <li><a href="#home-page">Home</a></li>
+            <li><a href="#info-page">About</a></li>
+            <li><a href="#project-page">Projects</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menuToggle" class="menuToggle"></i>
+    </nav>
 
+    <section class="home-page" id="home-page">
+        <div class="home-wrapper" id="home-wrapper">
+            <p class="name">Essentrix</p>
+            <h1>My Portfolio <img src="./tiny flower.png" alt="tiny flower"></h1>
+            <p>My portfolio site with some of my projects I'm most proud of</p>
+            <button class="btn" href="#project-page">Go to project page</button>
+        </div>
+        <!-- id="project-page" -->
+        <img src="./big flower.png" alt="big flower" id="big-flower">
+        <img src="./flower left.png" alt="flower left" id="flower-left">
+        <img src="./flower right.png" alt="flower right" id="flower-right">
+    </section>
 
+    <section class="info-page" id="info-page">
+        <div class="info-wrapper1">
+            <div class="info-wrapper2">
+                <h1>Background</h1>
+                <ul>
+                    <li>Doherty Memorial High School</li>
+                    <li>OSHA Certified</li>
+                </ul>
+            </div>
+
+            <div class="info-wrapper3">
+                <h1>Expertise</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="big flower2.png" alt="big flower 2" id="big-flower2">
+    </section>
+
+    <secton class="project-page" id="project-page">
+        <div class="project-wrapper">
+            <img src="./little flower.png" alt="little flower">
+            <h1>Projects</h1>
+            <p>These are some projects I've worked on in class that I'm most proud of because of either how I styled
+                them or
+                how well I handled the process of making them</p>
+        </div>
+        <div class="projects-wrapper">
+            <div class="project1-wrapper">
+                <img src="./project1.png" alt="video" id="video">
+                <a href="./dec12_Bproject/" target="_blank" class="project1-title">Brand
+                    Project 12/12/24</a>
+                <p>The goal of this project was to make a website for a brand and also display some other features. i
+                    love this project because of how i styled the home page as well as the clock in the bottom right
+                    corner</p>
+            </div>
+
+            <div class="project2-wrapper">
+                <img src="./project2.png" alt="video" id="video">
+                <a href="./may12/" target="_blank" class="project2-title">Animation Project 05/12/25</a>
+                <p>I mostly love this project because of how I styled it and made the background myself</p>
+            </div>
+
+            <div class="project3-wrapper">
+                <img src="./project3.png" alt="video" id="video">
+                <a href="./april15/" target="_blank" class="project3-title">Easing Practice 04/15/25</a>
+                <p>This is just a simple easing test but I just love the colors and the simplicity</p>
+            </div>
+
+            <div class="project4-wrapper">
+                <img src="./project4.png" alt="video" id="video">
+                <a href="./brand_project/" target="_blank" class="project4-title">Original Brand Project 08/27/24</a>
+                <p>This was a project where we make our own brand and this was back when i was first starting out so the
+                    colors arent very good but i liked the idea of a rat themed brand</p>
+            </div>
+        </div>
+    </secton>
 
 
     <script src="./script.js"></script>

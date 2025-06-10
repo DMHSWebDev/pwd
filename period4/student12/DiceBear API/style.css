@@ -1,0 +1,39 @@
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+    margin-top: 30vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pixel-conatiner,
+.botts__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+
+    img {
+        width: 60px;
+    }
+
+}
+
+.avatars-container {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}

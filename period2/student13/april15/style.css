@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba(255, 60, 0, 0.384);
+}
+
+h1 {
+    background: linear-gradient(to top, peachpuff, rgb(255, 179, 135), rgb(255, 135, 135));
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px peachpuff;
+    padding: 30px;
+    flex-direction: row;
+
+    img {
+        height: 60px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 600px;
+    gap: 1rem;
+}
+
+.box {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to top, peachpuff, rgb(255, 179, 135), rgb(255, 135, 135));
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px peachpuff;
+    margin-top: 20px;
+}
+
+.box:hover {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to bottom, peachpuff, rgb(255, 179, 135), rgb(255, 135, 135));
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px peachpuff;
+    margin-top: 20px;
+}
+
+.start-animation {
+    font-size: 50px;
+    background: linear-gradient(to top, peachpuff, rgb(255, 179, 135), rgb(255, 135, 135));
+    border: solid 3px peachpuff;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.start-animation:hover {
+    font-size: 50px;
+    background: linear-gradient(to bottom, peachpuff, rgb(255, 179, 135), rgb(255, 135, 135));
+    border: solid 3px peachpuff;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}

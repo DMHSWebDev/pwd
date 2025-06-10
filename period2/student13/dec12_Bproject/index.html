@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./Untitled design (8).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/yhc7jws.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="./Untitled design (14).png" alt="logo"></div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="varieties">Varieties</a></li>
+                <li><a href="Register">Register</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-nav-links">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="varieties">Varieties</a></li>
+                <li><a href="Register">Register</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="menuToggle"></i>
+    </nav>
+    <div class="landing-page" id="home">
+        <img src="./cola banner (1).png" alt="banner" id="banner">
+
+        <p>A globally recognized soda known for its iconic refreshing taste Since 1886 <br><span id="slogan">Real
+                Magic</span></p>
+        <!-- <p id="slogan">Real Magic</p> -->
+
+        <video autoplay loop muted id="videoBG">
+            <source src="Untitled design (5).mp4" type="video/mp4">
+        </video>
+
+        <div class="clock-container">
+            <h1 id="clock"></h1>
+        </div>
+    </div>
+
+    <div class="varieties" id="#varieties">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-videos">
+                    <div class="video"><video autoplay loop muted>
+                            <source src="./photos/diet coke.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="video"><video autoplay loop muted>
+                            <source src="./photos/coke 0 sugar.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="video"><video autoplay loop muted>
+                            <source src="./photos/cola spiced.mp4" type="video/mp4">
+                        </video></div>
+                </div>
+                <button id="prev">Prev</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-page">
+        <div class="form-wrapper">
+            <form id="registration-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error"></span>
+
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="password-error"></span>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error" id="confirm-password-error"></span>
+
+                <label for="newsletter">agree to newsletter</label>
+                <input type="checkbox" id="newsletter" name="newsletter" required>
+                <span class="error" id="newsletter-error"></span>
+
+                <button type="submit" id="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
