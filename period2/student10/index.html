@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi's Portfilo!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-section">
+            <img src="./Studio.jpg" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>Naomi and Tech</h1>
+            <h3>Programmer and Website designer</h3>
+            <p>Est. Augst 2024 Doherty Student</p>
+            <button class="btn" id="contact-btn">Contact me!</button>
+        </div>
+        <div class="hero-img">
+            <img src="./hero-img.png" alt="hero-img">
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h1>About</h1>
+        <p>Hi! I'm Naomi, a student at Doherty with a passion for web development and website design. As a beginner in
+            this field,
+            I’m eager to learn and grow my skills every day. I’m also OSHA certified, which shows my commitment to
+            safety and
+            professionalism. I primarily work with Visual Studio, specializing in HTML, JavaScript, CSS, and various
+            useful plugins
+            that help me create dynamic and responsive websites. I’m excited to take on new projects and challenges to
+            further
+            develop my abilities and contribute creatively to the web development community.
+        </p>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <h1>projects</h1>
+        <div class="slideshow-section">
+            <div class="slideshow">
+                <div class="slides">
+                    <img src="project.PNG" alt="computer">
+                    <img src="./grid.PNG" alt="design">
+                    <img src="./Capture.PNG" alt="example">
+                    <img src="./poject 2.PNG" alt="example2">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+        </div>
+
+    </section>
+
+    <section class="contact" id="contacts">
+        <h1>contact</h1>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

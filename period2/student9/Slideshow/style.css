@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(238, 230, 230);
+    flex-direction: row;
+
+}
+
+.text {
+
+    margin-right: 200px;
+
+    h1 {
+        font-size: 4rem;
+        font-family: "Playpen Sans Hebrew", cursive;
+    }
+
+    h2 {
+        font-family: "Lato", sans-serif;
+    }
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel {
+    position: relative;
+    width: 599px;
+    overflow: hidden;
+}
+
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-images img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 5px;
+    font-size: 26px;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+#next {
+    right: 5px;
+    font-size: 26px;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.lightbox {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    box-shadow: 0 0 20px black;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    z-index: 11;
+    cursor: pointer;
+}

@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Share Tech", sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+nav {
+    background-color: #4ca4a9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+
+    .social-icons {
+        position: fixed;
+        right: .5rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 1rem;
+
+    }
+
+    ul {
+        position: absolute;
+        left: 0;
+        margin: 1rem;
+        font-size: 1.5rem;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    .menu-icon {
+        display: none;
+
+
+        .fa-bars {
+            color: black;
+        }
+    }
+}
+
+ul:hover {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    font-size: 1.6rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons:hover {
+    position: fixed;
+    right: .5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: fit-content;
+}
+
+.hero {
+
+    h2 {
+        font-size: 10rem;
+        left: 0;
+        top: 0;
+        position: absolute;
+        margin: 15rem;
+    }
+
+    p {
+        width: 40vh;
+        left: 0;
+        position: absolute;
+        margin: 16rem;
+        font-size: 4rem;
+        width: 100vh;
+    }
+}
+
+#hero-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20vh;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50vh;
+
+}
+
+#about-image {
+    position: absolute;
+    margin: .5rem;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 3vh;
+    left: 40vh;
+}
+
+.talk {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    justify-content: row;
+}
+
+.about-text {
+    border: 6px solid rgba(24, 23, 23, 0.653);
+    box-shadow: 0px 0px 50px lightgrey;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+#touch-image {
+    position: absolute;
+    left: 65%;
+    width: 50vh;
+    border-radius: 100vh;
+}
+
+.text-section {
+    display: flex;
+    height: 121vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    p {
+        margin: 5rem;
+        width: 60vh;
+        font-size: 1.2rem;
+        font-weight: Bolder;
+    }
+
+}
+
+.about {
+
+    p {
+        border-radius: 20px;
+        margin: .4rem;
+        width: 40vh;
+    }
+}
+
+.hero,
+.skills,
+.tung {
+    background-color: #6dacdf;
+    color: white;
+}
+
+.about,
+.people,
+.touch {
+    background-color: #4ca4a9;
+    color: white;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 15vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+button:hover {
+    background-color: rgb(107, 107, 246);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: lightgrey;
+    box-shadow: grey;
+    height: 30vh;
+    width: 50vh;
+}
+
+#contact-form input,
+#contact-form textarea {
+    font-family: "Tagesschrift", system-ui;
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form {
+    border: 3px solid blue;
+    align-items: center;
+}
+
+.people {
+    cursor: pointer;
+}
+
+.tung {
+    cursor: pointer;
+}
+
+@media screen and (mad-width:768px) {}
+
+@media screen and (mad-width:400px) {}

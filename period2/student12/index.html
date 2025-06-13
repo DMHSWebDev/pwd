@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Allaboutme">All about me</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+
+        </ul>
+        <div class="menu-icon"></div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hometext">
+            <h1>NYLAEH'S</h1>
+            <h2>Portfolio</h2>
+            <h4>Programming & web devolpment</h4>
+
+            <button id="btn">Learn More</button>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="abouttext">
+
+            <h2>See all kinds of </h2>
+            <h3>Beauty in programming
+            </h3>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatibus? Animi ea fugiat temporibus
+                quidem sunt veniam ut inventore illum aspernatur. Quasi rem commodi harum totam. Perspiciatis explicabo
+                maxime ipsa id ea sed corrupti labore quidem facere saepe, quia nemo laborum iusto ab est! Laboriosam
+                accusantium recusandae eligendi quo reprehenderit perferendis officiis, magnam explicabo, error quis
+                assumenda, ipsum illo debitis molestiae porro qui. Quae minus optio ducimus error velit distinctio
+                assumenda
+                iste architecto autem quisquam magni voluptate dignissimos totam nemo, sed, doloribus corrupti
+                laudantium?
+                Dolores quis harum modi expedita suscipit, laborum fuga non inventore necessitatibus deleniti vitae,
+                beatae
+                esse! Architecto?</p>
+            <h4>projects:</h4>
+            <div class="random">
+                <a href="./random joke api/" target="_blank" class="project-link">Random Joke Api</a>
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </div>
+            <div class="GSAP">
+                <a href="./gsap/" target="_blank" class="project-link">scroll and text plugins</a>
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </div>
+        </div>
+    </section>
+    <section class="Allaboutme" id="Allaboutme">
+        <div class="abouttext">
+            <h4>All about me</h4>
+
+            <p>Hi, my name is Nyny and I’m a freshman with a passion for technology and creativity. I specialize in
+                programming and web
+                development, and I’m also OSHA certified, reflecting my dedication to safety and professionalism.
+                Outside of
+                tech, I’m a
+                cheerleader who brings energy, positivity, and team spirit to everything I do. I’m known for being fun,
+                nice, and
+                genuinely caring, with a strong balance of book smarts and street smarts. I’m always ready to learn,
+                grow,
+                and take on
+                new challenges!</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container" id="contact-container">
+
+            <p>Thank you for visiting us</p>
+
+            <form class="contact-form" id="contact-form">
+                <label for="full-name">full-name</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <span class="error" id="name-error"></span>
+
+                <label for="email">Email :</label>
+                <input type="email" id="Email Address" name="Email" required>
+                <span class="error" id="email-error"></span>
+
+                <label for="password">password:</label>
+                <input type="password" required>
+                <span class="error" id="password-error"></span>
+                <span id="password-strength"></span>
+
+                <label for="confirm-password">confirm-password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error" id="confirm-password-error"></span>
+
+
+                <button id="reg-btn" type="submit">Register</button>
+
+
+            </form>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

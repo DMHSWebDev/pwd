@@ -4,95 +4,445 @@
     box-sizing: border-box;
 }
 
-.nav-sec {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: cursive;
+}
+
+.about {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkgrey;
-    height: 13vh;
+    background-image: url(./markus-spiske-cvBBO4PzWPg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
 
-    i {
-        padding-left: 1rem;
+    .ac {
+        background-color: #d2d3d1c9;
+        width: 1500px;
+        height: 700px;
+        min-height: fit-content;
+
+        h2 {
+            font-size: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    }
+
+}
+
+.land {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-image: url(./james-harrison-vpOeXr5wmR4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+
+    .lc {
+        padding-left: 5rem;
+        padding-top: 5rem;
+        min-height: fit-content;
+    }
+
+    h1 {
+        font-size: 10rem;
+        color: white;
+        /* position: absolute;
+        left: 5rem;
+        top: 15rem; */
+    }
+
+    h2 {
+        font-size: 6rem;
+        color: white;
+        /* position: absolute;
+        left: 15rem;
+        top: 25rem; */
+    }
+
+    p {
+        font-size: 2rem;
+        color: white;
+        text-decoration: overline;
+        /* position: absolute;
+        left: 5rem;
+        top: 33rem; */
+    }
+
+    .port {
+        font-size: 5rem;
+        background-color: #d2d3d1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        padding: 2rem;
+        width: 60%;
+        margin-top: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        /* position: absolute;
+        left: 7rem;
+        top: 37rem;
+        text-decoration: none; */
+    }
+
+    .port:hover {
+        font-size: 3rem;
+        transition: ease-in-out 1s;
+
+    }
+}
+
+.works {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2d3d1;
+    min-height: fit-content;
+
+    .ic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 90rem;
+    }
+
+    .wrdc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 90rem;
+    }
+
+    .imgo {
+        position: absolute;
+        top: 128rem;
+        width: 600px;
+        height: 400px;
+    }
+
+    .imgt {
+        position: absolute;
+        top: 153rem;
+        width: 600px;
+        height: 400px;
+    }
+
+    p {
+        padding-left: 90rem;
+        font-size: 2rem;
+    }
+
+    h2 {
+        padding-left: 90rem;
+        font-size: 4rem;
+    }
+}
+
+.ty {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d2d3d1;
+    min-height: fit-content;
+
+    .tc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: fit-content;
+
+
+        h1 {
+            font-size: 7rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        i {
+            color: black;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #d2d3d1;
+    height: 8vh;
+    min-height: fit-content;
+
+    h2 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    h2:hover {
+        text-decoration: underline;
+        transition: ease-in-out 1s;
+        font-size: 3.5rem;
     }
 
     ul {
         list-style: none;
         display: flex;
-
-
-    }
-
-    li {
-        margin-left: 25px;
-
+        padding-right: 2rem;
     }
 
     a {
-        text-decoration: none;
-        font-size: 1.5rem;
         color: white;
-
+        padding-left: 2rem;
+        font-size: 3rem;
     }
 
     a:hover {
-        transition: ease-in-out 0.3s;
-        color: green;
-        font-size: 2rem;
+        font-size: 3.5rem;
+        transition: ease-in-out 1s;
+        text-decoration: none;
     }
-
-    .img1 {
-        position: absolute;
-        left: 0;
-        width: 150px;
-    }
-
-    .img2 {
-        position: absolute;
-        right: 0;
-        width: 150px;
-        top: -2.5rem;
-    }
-
-
 }
 
-.landing {
-    height: 100vh;
-    background-image: url(./etienne-martin-2_K82gx9Uk8-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15rem 10rem;
-    min-height: fit-content;
+@media screen and (max-width: 768px) {
+    .about {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./markus-spiske-cvBBO4PzWPg-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: fit-content;
 
-    h1 {
-        color: white;
-        font-size: 7rem;
+        .ac {
+            background-color: #d2d3d1c9;
+            width: 500px;
+            height: 500px;
+            min-height: fit-content;
+
+            h2 {
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: underline;
+            }
+
+            p {
+                font-size: 2rem;
+                padding: 3rem;
+            }
+        }
 
     }
 
-    p {
-        color: white;
-        font-size: 2rem;
-        padding-bottom: 2rem;
+    .land {
+        height: 60vh;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        background-image: url(./james-harrison-vpOeXr5wmR4-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: fit-content;
+
+        .lc {
+            padding-left: 5rem;
+            padding-top: 5rem;
+            min-height: fit-content;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            /* position: absolute;
+            left: 5rem;
+            top: 15rem; */
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: white;
+            /* position: absolute;
+            left: 15rem;
+            top: 25rem; */
+        }
+
+        p {
+            font-size: 2rem;
+            color: white;
+            text-decoration: overline;
+            /* position: absolute;
+            left: 5rem;
+            top: 33rem; */
+        }
+
+        .port {
+            font-size: 2rem;
+            background-color: #d2d3d1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            padding: 1rem;
+            width: 60%;
+            margin-top: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            /* position: absolute;
+            left: 7rem;
+            top: 37rem;
+            text-decoration: none; */
+        }
+
+        .port:hover {
+            font-size: 1rem;
+            transition: ease-in-out 1s;
+
+        }
     }
 
-    .btn {
-        text-decoration: underline;
-        font-size: 2rem;
-        background-color: darkgrey;
-        border-radius: 4px;
-        padding: 1.5rem 3rem;
-        color: white;
-        cursor: pointer;
+
+    /* .works {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d2d3d1;
+        min-height: fit-content;
+
+        .imgo {
+            position: absolute;
+            top: 87.5rem;
+            right: 18rem;
+            width: 400px;
+            height: 200px;
+        }
+
+        .imgt {
+            position: absolute;
+            top: 100rem;
+            right: 18rem;
+            width: 400px;
+            height: 200px;
+        }
+
+        p {
+            padding-left: 60rem;
+            padding-right: 20rem;
+            font-size: 2rem;
+        }
+
+        h2 {
+            padding-left: 90rem;
+            font-size: 4rem;
+        }
+    } */
+
+    .ty {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #d2d3d1;
+        min-height: fit-content;
+
+        .tc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: fit-content;
+
+
+            h1 {
+                font-size: 4rem;
+                padding-left: 1rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                padding-left: 2rem;
+            }
+
+            i {
+                color: black;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding-top: 1rem;
+                padding-left: 2rem;
+            }
+        }
     }
 
-    .btn:hover {
-        transition: ease-in-out 0.3s;
-        color: green;
-        font-size: 3rem;
-        background-color: white;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: #d2d3d1;
+        height: 8vh;
+        min-height: fit-content;
+
+        h2 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding-right: 2rem;
+        }
+
+        a {
+            color: white;
+            padding-left: 2rem;
+            font-size: 2rem;
+        }
     }
 }

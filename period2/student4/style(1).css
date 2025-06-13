@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    height: 13vh;
+
+    i {
+        padding-left: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+
+    }
+
+    li {
+        margin-left: 25px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+
+    }
+
+    a:hover {
+        transition: ease-in-out 0.3s;
+        color: green;
+        font-size: 2rem;
+    }
+
+    .img1 {
+        position: absolute;
+        left: 0;
+        width: 150px;
+    }
+
+    .img2 {
+        position: absolute;
+        right: 0;
+        width: 150px;
+        top: -2.5rem;
+    }
+
+
+}
+
+.landing {
+    height: 100vh;
+    background-image: url(./etienne-martin-2_K82gx9Uk8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 10rem;
+    min-height: fit-content;
+
+    h1 {
+        color: white;
+        font-size: 7rem;
+
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .btn {
+        text-decoration: underline;
+        font-size: 2rem;
+        background-color: darkgrey;
+        border-radius: 4px;
+        padding: 1.5rem 3rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        transition: ease-in-out 0.3s;
+        color: green;
+        font-size: 3rem;
+        background-color: white;
+    }
+}

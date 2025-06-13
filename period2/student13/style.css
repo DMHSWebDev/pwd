@@ -380,35 +380,137 @@ nav {
 
 @media screen and (max-width:768px) {
     .home-page {
+        .home-wrapper {
+            position: absolute;
+            left: 30px;
+            top: 200px;
+            z-index: 10;
+
+            h1 {
+                font-size: 70px;
+
+                img {
+                    height: 100px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+
+            .btn {
+                margin-top: 40px;
+                font-size: 20px;
+                padding: 15px;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+
+
+        }
+
+        #big-flower {
+            position: absolute;
+            right: 3%;
+            top: 180px;
+            height: 200px;
+        }
+
         #flower-left {
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 200px;
+            height: 150px;
         }
 
         #flower-right {
             position: absolute;
             right: 0;
             bottom: 0;
-            height: 200px;
+            height: 150px;
+        }
+    }
+
+    .info-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+
+        #big-flower2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 300px;
+        }
+
+        .info-wrapper1 {
+            flex-direction: row;
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            left: 20px;
+            top: 100px;
+        }
+
+        .info-wrapper2 {
+            flex-direction: column;
+            display: flex;
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+
+                li {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .info-wrapper3 {
+            flex-direction: column;
+            display: flex;
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+
+                li {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 
     .project-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
 
         .project-wrapper {
-            width: 260px;
+            width: 160px;
             position: absolute;
-            left: 30px;
+            left: 20px;
 
             h1 {
-                font-size: 70px;
+                font-size: 40px;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 21px;
+                font-size: 15px;
             }
         }
 
@@ -424,26 +526,76 @@ nav {
             height: 100vh;
             width: 50%;
             position: absolute;
-            bottom: 0;
-            right: 0;
-            gap: 20px;
+            bottom: 15px;
+            right: 0px;
+            gap: 5px;
 
             .project1-wrapper {
                 grid-area: p1;
-                margin-top: 25px;
+
+                img {
+                    height: 100px;
+                    width: 200px;
+                }
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
 
             .project2-wrapper {
                 grid-area: p2;
-                margin-top: 25px;
+
+                img {
+                    height: 100px;
+                    width: 200px;
+                }
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
 
             .project3-wrapper {
                 grid-area: p3;
+
+                img {
+                    height: 100px;
+                    width: 200px;
+                }
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
 
             .project4-wrapper {
                 grid-area: p4;
+
+                img {
+                    height: 100px;
+                    width: 200px;
+                }
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -597,7 +749,7 @@ nav {
             height: 100vh;
             width: 50%;
             position: absolute;
-            bottom: 0px;
+            bottom: 15px;
             right: 0px;
             gap: 5px;
 
@@ -606,6 +758,7 @@ nav {
 
                 img {
                     height: 100px;
+                    width: 200px;
                 }
 
                 h1 {
@@ -622,6 +775,7 @@ nav {
 
                 img {
                     height: 100px;
+                    width: 200px;
                 }
 
                 h1 {
@@ -638,6 +792,7 @@ nav {
 
                 img {
                     height: 100px;
+                    width: 200px;
                 }
 
                 h1 {
@@ -654,6 +809,7 @@ nav {
 
                 img {
                     height: 100px;
+                    width: 200px;
                 }
 
                 h1 {

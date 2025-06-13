@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Castoro Titling", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero,
+.about,
+.projects,
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+#menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    visibility: true;
+}
+
+nav {
+    background-color: #452103;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    color: #bb6b00;
+    padding: 10px 10px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 90px;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: #bb6b00;
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        border-radius: 50px;
+    }
+}
+
+.hero,
+.contact {
+    background-color: #690500;
+}
+
+.about {
+    background-color: #bb6b00;
+}
+
+.projects {
+    background-color: #934b00;
+}
+
+.hero {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+
+    h1 {
+        padding: 0.4rem 2rem;
+        color: #bb6b00;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 5rem;
+    }
+
+    h3 {
+        padding: 0.4rem 2rem;
+        color: #452103;
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p {
+        padding: 0.4rem 2rem;
+        color: #bb6b00;
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .hero-img {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .btn {
+        padding: 0.4rem 2rem;
+        border-radius: 1rem;
+        margin: 4rem;
+        font-size: 1rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #bb6b00;
+        background-color: #452103;
+        border-color: #a2120a84;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about {
+
+    h1 {
+        color: #452103;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-family: "Mr De Haviland", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p {
+        color: #690500;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        align-items: center;
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.slides img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.slides {
+    display: flex;
+    width: 2000px;
+    transition: transform 0.5s;
+}
+
+.slideshow {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    background-color: #69050078;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    translate: translateY(-50%);
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    translate: translateY(50%);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #680500aa;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    box-shadow: 0 0 20px #452103a1;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #bb6b00;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 11;
+}

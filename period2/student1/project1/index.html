@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=300, initial-scale=1.0">
+    <title>DiceBear Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Draggable.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="base-avatar">
+            <div id="avatar-stack"></div>
+            <button id="download-svg" type="button">Download SVG</button>
+        </div>
+
+
+        <div class="customize__container">
+            <h2>Hair Color</h2>
+            <div id="hair-color-options">
+                <div class="hair-color-swatch" data-color="0e0e0e" style="background:#0e0e0e"></div>
+                <div class="hair-color-swatch" data-color="3eac2c" style="background:#3eac2c"></div>
+                <div class="hair-color-swatch" data-color="6a4e35" style="background:#6a4e35"></div>
+                <div class="hair-color-swatch" data-color="85c2c6" style="background:#85c2c6"></div>
+                <div class="hair-color-swatch" data-color="796a45" style="background:#796a45"></div>
+                <div class="hair-color-swatch" data-color="562306" style="background:#562306"></div>
+                <div class="hair-color-swatch" data-color="592454" style="background:#592454"></div>
+                <div class="hair-color-swatch" data-color="ab2a18" style="background:#ab2a18"></div>
+                <div class="hair-color-swatch" data-color="ac6511" style="background:#ac6511"></div>
+                <div class="hair-color-swatch" data-color="afafaf" style="background:#afafaf"></div>
+                <div class="hair-color-swatch" data-color="b9a05f" style="background:#b9a05f"></div>
+                <div class="hair-color-swatch" data-color="cb6820" style="background:#cb6820"></div>
+                <div class="hair-color-swatch" data-color="dba3be" style="background:#dba3be"></div>
+                <div class="hair-color-swatch" data-color="e5d7a3" style="background:#e5d7a3"></div>
+            </div>
+        </div>
+
+        <div class="customize__container">
+            <h2>Skin Color</h2>
+            <div id="skin-color-options">
+                <div class="skin-color-swatch" data-color="9e5622" style="background:#9e5622"></div>
+                <div class="skin-color-swatch" data-color="763900" style="background:#763900"></div>
+                <div class="skin-color-swatch" data-color="ecad80" style="background:#ecad80"></div>
+                <div class="skin-color-swatch" data-color="f2d3b1" style="background:#f2d3b1"></div>
+            </div>
+        </div>
+        <div class="customize__container">
+            <h2>Hair</h2>
+            <div id="hair-options">
+                <div class="hair-draggable" data-hair="long-01.png"><img src="hair/long-01.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-02.png"><img src="hair/long-02.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-03.png"><img src="hair/long-03.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-04.png"><img src="hair/long-04.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-05.png"><img src="hair/long-05.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-06.png"><img src="hair/long-06.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-07.png"><img src="hair/long-07.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-08.png"><img src="hair/long-08.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-09.png"><img src="hair/long-09.png" draggable="false"></div>
+                <div class="hair-draggable" data-hair="long-10.png"><img src="hair/long-10.png" draggable="false"></div>
+            </div>
+        </div>
+        <div class="customize__container">
+            <h2>Eyes</h2>
+            <div id="eyes-options">
+                <div class="eyes-draggable" data-eyes="variant-01.png"><img src="eyes/variant-01.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-02.png"><img src="eyes/variant-02.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-03.png"><img src="eyes/variant-03.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-04.png"><img src="eyes/variant-04.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-05.png"><img src="eyes/variant-05.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-06.png"><img src="eyes/variant-06.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-07.png"><img src="eyes/variant-07.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-08.png"><img src="eyes/variant-08.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-09.png"><img src="eyes/variant-09.png" draggable="false"></div>
+                <div class="eyes-draggable" data-eyes="variant-10.png"><img src="eyes/variant-10.png" draggable="false"></div>
+
+            </div>
+        </div>
+        <div class="customize__container">
+            <h2>Mouth</h2>
+            <div id="mouth-options">
+                <div class="mouth-draggable" data-mouth="variant-01.png"><img src="mouth/variant-01.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-02.png"><img src="mouth/variant-02.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-03.png"><img src="mouth/variant-03.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-04.png"><img src="mouth/variant-04.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-05.png"><img src="mouth/variant-05.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-06.png"><img src="mouth/variant-06.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-07.png"><img src="mouth/variant-07.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-08.png"><img src="mouth/variant-08.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-09.png"><img src="mouth/variant-09.png" draggable="false"></div>
+                <div class="mouth-draggable" data-mouth="variant-10.png"><img src="mouth/variant-10.png" draggable="false"></div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

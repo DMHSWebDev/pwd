@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Nicole Gucci",
+        "position": "Website designer",
+        "photo": "https://randomuser.me/api/portraits/women/49.jpg",
+        "text": "As a web designer, I really appreciated their expertise in bringing the vision for the site to life. They were highly collaborative, responsive, and brought great technical solutions to any challenges that arose. The site runs smoothly, and their attention to detail ensured everything was perfectly optimized. I’d definitely recommend them to anyone in need of a skilled, reliable developer!"
+    },
+    {
+        "name": "Miyah Myles",
+        "position": "Marketing",
+        "photo": "https://randomuser.me/api/portraits/women/46.jpg",
+        "text": "Working with Kevin was an absolute pleasure! Their expertise in web development, attention to detail, and commitment to delivering a high-quality site exceeded our expectations. We highly recommend them for anyone looking for a skilled and reliable developer!"
+    },
+    {
+        "name": "James Lawson",
+        "position": "Project Manager",
+        "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+        "text": "Kevin demonstrated exceptional problem-solving skills and professionalism throughout our project. His ability to translate complex requirements into a seamless user experience was truly impressive. I would not hesitate to collaborate with him again!"
+    },
+    {
+        "name": "Emily Carter",
+        "position": "UI/UX Designer",
+        "photo": "https://randomuser.me/api/portraits/women/55.jpg",
+        "text": "It was fantastic working with Kevin! His coding skills and deep understanding of user-centered design made a huge difference in our project’s success. I highly recommend him for any web development needs!"
+    },
+    {
+        "name": "David Zhang",
+        "position": "Entrepreneur",
+        "photo": "https://randomuser.me/api/portraits/men/45.jpg",
+        "text": "Kevin built a stunning, high-performance website for our startup. He was responsive, professional, and went above and beyond to ensure every detail was perfect. A top-tier developer and a pleasure to work with!"
+    },
+    {
+        "name": "Sophia Patel",
+        "position": "Small Business Owner",
+        "photo": "https://randomuser.me/api/portraits/women/29.jpg",
+        "text": "I needed a website that was both beautiful and functional, and Kevin delivered beyond my expectations. His technical skills, creativity, and dedication to quality were evident in every step of the process. I can’t recommend him enough!"
+    },
+    {
+        "name": "Michael Brown",
+        "position": "Software Engineer",
+        "photo": "https://randomuser.me/api/portraits/men/36.jpg",
+        "text": "Kevin’s coding expertise and efficiency helped us launch our platform ahead of schedule. His ability to write clean, scalable code made a significant impact on our project. A truly skilled developer and team player!"
+    },
+    {
+        "name": "Lisa Wong",
+        "position": "E-commerce Owner",
+        "photo": "https://randomuser.me/api/portraits/women/40.jpg",
+        "text": "Kevin developed a beautiful and highly functional website for my online store. He was patient, insightful, and always available to answer my questions. I am thrilled with the results and would absolutely work with him again!"
+    },
+    {
+        "name": "Chris Evans",
+        "position": "Tech Startup CEO",
+        "photo": "https://randomuser.me/api/portraits/men/50.jpg",
+        "text": "Our company needed a scalable web solution, and Kevin delivered flawlessly. His expertise in modern web technologies and security best practices made all the difference. Highly recommended for any serious web development projects!"
+    },
+    {
+        "name": "Natalie Foster",
+        "position": "Content Creator",
+        "photo": "https://randomuser.me/api/portraits/women/33.jpg",
+        "text": "Kevin helped design and develop my personal website, and I couldn’t be happier! He understood my vision perfectly and turned it into a beautiful and user-friendly platform. Fantastic experience from start to finish!"
+    },
+    {
+        "name": "Robert Green",
+        "position": "Digital Marketing Consultant",
+        "photo": "https://randomuser.me/api/portraits/men/28.jpg",
+        "text": "Kevin was instrumental in optimizing my website for both speed and SEO. His technical skills combined with his deep understanding of digital marketing made a huge difference in my site's performance. A true professional!"
+    }
+]
